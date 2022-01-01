@@ -8,7 +8,7 @@ module.exports = {
 	// Webpack will next take the entry point we have provided, bundle that code...
 	// ... and "output" that bundled code to a folder that we specify
 	output: {
-		path: path.resolve(__dirname, "dist"),
+		path: path.join(__dirname + "/dist"),
 		filename: "main.bundle.js",
 	},
 	plugins: [
