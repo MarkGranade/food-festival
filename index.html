@@ -234,4 +234,18 @@
 			</div>
 		</footer>
 	</body>
+
+	<script>
+		(function () {
+			// checks to see if <serviceWorker> exists on the global <navigator> object.
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker
+					.register("./service-worker.js")
+					.then(() => console.log("Service Worker registered successfully."))
+					.catch((error) =>
+						console.log("Service Worker registration failed:", error)
+					);
+			}
+		})();
+	</script>
 </html>

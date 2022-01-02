@@ -12,6 +12,9 @@ module.exports = {
 		schedule: "./assets/js/schedule.js",
 		tickets: "./assets/js/tickets.js",
 	},
+	devServer: {
+		static: "./",
+	},
 	// Webpack will next take the entry point we have provided, bundle that code...
 	// ... and "output" that bundled code to a folder that we specify
 	output: {
